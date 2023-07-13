@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="imagenes/favicom/favicon.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Iluminacion Artesanal</title>
+</head>
+<body>
+
+  <h1>Tienda de Iluminación Artesanal</h1>
+  <div id="filtro">
+    <label for="tipo">Filtrar por tipo:</label>
+    <select id="tipo" onchange="filtrarPorTipo()">
+      <option value="todos">Todos</option>
+      <option value="arana">Araña</option>
+      <option value="aplique">Aplique</option>
+      <option value="lampara">Lámpara</option>
+    </select>
+  </div>
+  <div id="productos"></div>
+  <div id="carrito">
+    <h2>Carrito de Compras</h2>
+    <ul id="carrito-items"></ul>
+    <p id="carrito-total">Total: $0</p>
+    <button id="vaciar-carrito">Vaciar Carrito</button>
+  </div>
+  <script src="./js/app.js"></script>
+
+</body>
+</html>
