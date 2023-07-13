@@ -130,7 +130,7 @@ const productos = [
 
 ];
 
-// Función para mostrar los productos en la página
+//Mostrar los productos en la página
 function mostrarProductos() {
   const productosDiv = document.getElementById('productos');
   productosDiv.innerHTML = '';
@@ -140,7 +140,7 @@ function mostrarProductos() {
     productoDiv.classList.add('producto');
     productoDiv.innerHTML = `
       <h3>${producto.nombre}</h3>
-      <img src="${producto.imagen}" alt="${producto.nombre}">
+      <img src="/imagenes/productos/${producto.imagen}" alt="${producto.nombre}">
       <p>Precio: $${producto.precio}</p>
       <button class="button" onclick="agregarAlCarrito(${producto.id})">Agregar al Carrito</button>
     `;
