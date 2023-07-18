@@ -140,7 +140,7 @@ function mostrarProductos() {
     productoDiv.classList.add('producto');
     productoDiv.innerHTML = `
       <h3>${producto.nombre}</h3>
-      <img src="../imagenes/productos/${producto.imagen}" alt="${producto.nombre}">
+      <img src="./imagenes/productos/${producto.imagen}" alt="${producto.nombre}">
       <p>Precio: $${producto.precio}</p>
       <button class="button" onclick="agregarAlCarrito(${producto.id})">Agregar al Carrito</button>
     `;
