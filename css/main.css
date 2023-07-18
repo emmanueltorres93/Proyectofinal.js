@@ -13,13 +13,17 @@ h1, h2 {
   margin: 20px;
   padding: 10px;
   border: 1px solid #ccc;
+  width: 40%;
 }
 
 #productos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
-  
+
+}
+#carrito{
+  width: 50%;
 }
 
 .producto {

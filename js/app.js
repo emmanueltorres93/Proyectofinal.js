@@ -140,7 +140,7 @@ function mostrarProductos() {
     productoDiv.classList.add('producto');
     productoDiv.innerHTML = `
       <h3>${producto.nombre}</h3>
-      <img src="/imagenes/productos/${producto.imagen}" alt="${producto.nombre}">
+      <img src="../imagenes/productos/${producto.imagen}" alt="${producto.nombre}">
       <p>Precio: $${producto.precio}</p>
       <button class="button" onclick="agregarAlCarrito(${producto.id})">Agregar al Carrito</button>
     `;
@@ -181,7 +181,7 @@ function agregarAlCarrito(id) {
   actualizarCarrito();
 }
 
-// Función para eliminar un producto del carrito
+// Eliminar un producto del carrito
 function eliminarDelCarrito(index) {
   let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
   carrito.splice(index, 1);
@@ -189,13 +189,13 @@ function eliminarDelCarrito(index) {
   actualizarCarrito();
 }
 
-// Función para vaciar el carrito
+// Vaciar el carrito
 function vaciarCarrito() {
   localStorage.removeItem('carrito');
   actualizarCarrito();
 }
 
-// Función para mostrar el carrito en la página
+// Mostrar el carrito en la página
 function mostrarCarrito() {
   let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
   const carritoItems = document.getElementById('carrito-items');
@@ -206,7 +206,7 @@ function mostrarCarrito() {
   carrito.forEach((producto, index) => {
     const li = document.createElement('li');
     li.innerHTML = `
-      <img src="${producto.imagen}" alt="${producto.nombre}">
+      <img src="../imagenes/productos/${producto.imagen}" alt="${producto.nombre}">
       ${producto.nombre} - $${producto.precio}
     `;
     const eliminarBtn = document.createElement('button');
@@ -220,13 +220,12 @@ function mostrarCarrito() {
   carritoTotal.innerHTML = `Total: $${total}`;
 }
 
-// Función para actualizar el carrito y los productos
+// Actualizar el carrito y los productos
 function actualizarCarrito() {
   mostrarProductos();
   mostrarCarrito();
 }
 
-// Evento DOMContentLoaded
 document.addEventListener('DOMContentLoaded', () => {
   actualizarCarrito();
   const vaciarCarritoBtn = document.getElementById('vaciar-carrito');
