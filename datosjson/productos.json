@@ -1,0 +1,128 @@
+{"productos":[
+  {
+    "id": 1,
+    "tipo": "araña",
+    "nombre": "A-1",
+    "precio": 144000,
+    "imagen": "araña.1.jpg"
+  },
+  {
+    "id": 2,
+    "tipo": "araña",
+    "nombre": "A-2",
+    "precio": 92400,
+    "imagen": "../araña.2.jpg"
+  },
+  {
+    "id": 3,
+    "tipo": "araña",
+    "nombre": "A-3",
+    "precio": 76100,
+    "imagen": "araña.3.jpg"
+  },
+  {
+    "id": 4,
+    "tipo": "araña",
+    "nombre": "A-4",
+    "precio": 135000,
+    "imagen": "araña.4.jpg"
+  },
+  {
+    "id": 5,
+    "tipo": "araña",
+    "nombre": "A-5",
+    "precio": 86300,
+    "imagen": "araña.5.jpg"
+  },
+  {
+    "id": 6,
+    "tipo": "araña",
+    "nombre": "A-6",
+    "precio": 66100,
+    "imagen": "araña.6.jpg"
+  },
+  {
+    "id": 7,
+    "tipo": "aplique",
+    "nombre": "AP-1",
+    "precio": 17500,
+    "imagen": "aplique.1.jpg"
+  },
+  {
+    "id": 8,
+    "tipo": "aplique",
+    "nombre": "AP-2",
+    "precio": 21100,
+    "imagen": "aplique.2.jpg"
+  },
+  {
+    "id": 9,
+    "tipo": "aplique",
+    "nombre": "AP-3",
+    "precio": 21300,
+    "imagen": "aplique.3.jpg"
+  },
+  {
+    "id": 10,
+    "tipo": "aplique",
+    "nombre": "AP-4",
+    "precio": 19800,
+    "imagen": "aplique.4.jpg"
+  },
+  {
+    "id": 11,
+    "tipo": "aplique",
+    "nombre": "AP-5",
+    "precio": 24000,
+    "imagen": "aplique.5.jpg"
+  },
+  {
+    "id": 12,
+    "tipo": "aplique",
+    "nombre": "AP-6",
+    "precio": 21700,
+    "imagen": "aplique.6.jpg"
+  },
+  {
+    "id": 13,
+    "tipo": "lampara",
+    "nombre": "LM-1",
+    "precio": 25600,
+    "imagen": "LM.1.jpg"
+  },
+  {
+    "id": 14,
+    "tipo": "lampara",
+    "nombre": "LM-2",
+    "precio": 25600,
+    "imagen": "LM.2.jpg"
+  },
+  {
+    "id": 15,
+    "tipo": "lampara",
+    "nombre": "LM-3",
+    "precio": 24700,
+    "imagen": "LM.3.jpg"
+  },
+  {
+    "id": 13,
+    "tipo": "lampara",
+    "nombre": "LM-4",
+    "precio": 25200,
+    "imagen": "LM.4.jpg"
+  },
+  {
+    "id": 14,
+    "tipo": "lampara",
+    "nombre": "LM-5",
+    "precio": 27400,
+    "imagen": "LM.5.jpg"
+  },
+  {
+    "id": 15,
+    "tipo": "lampara",
+    "nombre": "LM-6",
+    "precio": 24000,
+    "imagen": "LM.6.jpg"
+  }
+]}
