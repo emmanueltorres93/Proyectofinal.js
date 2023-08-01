@@ -47,7 +47,7 @@ function filtrarPorTipo() {
     productoDiv.classList.add('producto');
     productoDiv.innerHTML = `
       <h3>${producto.nombre}</h3>
-      <img src="${producto.imagen}" alt="${producto.nombre}">
+      <img src="../imagenes/productos/${producto.imagen}" alt="${producto.nombre}">
       <p>Precio: $${producto.precio}</p>
       <button class="button" onclick="agregarAlCarrito(${producto.id})">Agregar al Carrito</button>
     `;
@@ -88,6 +88,25 @@ function vaciarCarrito() {
   actualizarCarrito();
 }
 
+// Finalizar la compra
+function comprar() {
+  if (carrito.length === 0) {
+    Swal.fire({
+      icon: 'error',
+      title: 'Carrito Vacío',
+      text: 'No puedes finalizar la compra porque el carrito está vacío.',
+    });
+  } else {
+    Swal.fire({
+      icon: 'success',
+      title: '¡Compra Exitosa!',
+      text: '¡Gracias por tu compra! Tu pedido ha sido procesado.',
+    }).then(() => {
+      vaciarCarrito();
+    });
+  }
+}
+
 // Mostrar el carrito en la página
 function mostrarCarrito() {
   let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
@@ -123,4 +142,12 @@ document.addEventListener('DOMContentLoaded', () => {
   actualizarCarrito();
   const vaciarCarritoBtn = document.getElementById('vaciar-carrito');
   vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
+  const comprarBtn = document.getElementById('comprar-btn');
+  comprarBtn.addEventListener('click', comprar);
 });
+
+
+
+
+
+
