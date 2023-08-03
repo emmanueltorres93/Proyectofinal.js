@@ -36,7 +36,7 @@ FUNCIONALIDADES Y CARACTERÍSTICAS:
 
 LINKS:
 
-• Link GitHub: https://github.com/emmanueltorres93/Proyectofinal.js.git)
+• Link GitHub: https://github.com/emmanueltorres93/Proyectofinal.js.git
 
 • Link deployment de GitHub: https://emmanueltorres93.github.io/Proyectofinal.js/
 
