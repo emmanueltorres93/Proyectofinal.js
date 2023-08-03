@@ -6,7 +6,8 @@ async function cargarProductos() {
       throw new Error('Error al cargar los productos.');
     }
     const data = await response.json();
-    return data.productos;
+    productos = data.productos;
+    return productos;
   } catch (error) {
     console.error(error);
     return [];
@@ -33,7 +34,7 @@ async function mostrarProductos() {
 }
 
 // Filtrar productos por tipo
-function filtrarPorTipo() {
+function filtrarPorTipo(productos) {
   const tipoSelect = document.getElementById('tipo');
   const tipoSeleccionado = tipoSelect.value;
 
@@ -90,6 +91,7 @@ function vaciarCarrito() {
 
 // Finalizar la compra
 function comprar() {
+  let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
   if (carrito.length === 0) {
     Swal.fire({
       icon: 'error',
