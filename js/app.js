@@ -145,9 +145,3 @@ document.addEventListener('DOMContentLoaded', () => {
   const comprarBtn = document.getElementById('comprar-btn');
   comprarBtn.addEventListener('click', comprar);
 });
-
-
-
-
-
-
